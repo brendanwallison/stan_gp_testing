@@ -65,6 +65,7 @@ plot(r)
 # Data Frames
 bioclim_df = as.data.frame(scaled_bioclim_full)
 r_df = as.data.frame(r)
+k_df = exp(3*r_df)
 
 # Matrices and arrays
 r_mat = as.matrix(r, wide=TRUE) # nxm matrix of growth rates
@@ -90,3 +91,4 @@ visualize(land_mask)
 visualize(r_mat)
 
 r_df[1:4,]
+
